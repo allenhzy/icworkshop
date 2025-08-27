@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>3D IC Workshop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
+    <bibtex src="src/edacenter.bib"></bibtex>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/load_data.js"></script>
+</head>
+
+
+<body>
+
+    <div class="pt-3 tab-pane"></div>
+
+    <div id="workshopTitleDiv" class="col d-flex text-center align-items-center">
+        <div id="titleText">
+            <h1>3D IC Workshop</h1>
+        </div>
+    </div>
+
+    <!-- main body -->
+    <div class="container tab-content px-3 pt-5">
+        <div>
+            <div class="pt-3">
+                <h1><b>Agenda</b></h1>
+                <div class="pt-3">
+                    <h5><b>Date</b>: 16th September 2025</h5>
+                    <h5><b>Time</b>: 8:20 - 12:00</h5>
+                    <h5><b>Venue</b>: TBD</h5>
+                </div>
+                <!-- <a class="btn btn-primary btn-lg" href="https://forms.gle/y11tqJdbyw9ZAwbh9" role="button">Register
+                    Now!</a> -->
+                <!-- <div class="pt-2">
+                    <b>Note: The number of seats is limited. Reservations will be on a first-come, first-served basis.
+                        Final decisions will be announced afterward.</b>
+                </div> -->
+            </div>
+
+
+            <div class="pt-3 accordion" id="accordionExample">
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                            <div class="col-2">8:20-9:10</div>
+                            <div class="col-8 row">
+                                <div class="pt-2"><strong>AI-Driven Design Automation for Multi-Chip Integration in AI Chips</strong></div>
+                                <div class="pt-1 row">
+                                    <div class="pt-1"><em>Prof. Sung-Kyu Lim (Georgia Tech)</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            <div class="pt-2 row profbox">
+                                <div class="col-2">
+                                    <img src="./images/sklim.jpg" class="img-fluid" alt="Responsive image">
+                                </div>
+                                <div class="col-10">
+                                    <h5><strong>Prof. Sung-Kyu Lim (Georgia Tech)</strong></h5>
+                                    <strong><em>AI-Driven Design Automation for Multi-Chip Integration in AI Chips</em></strong>
+                                    <div><b>Abstract:</b> Multi-chip integration has become a standard approach in AI training and is rapidly gaining traction in edge learning applications. Leveraging 2.5D and 3D IC architecture enables substantial improvements in energy efficiency and latency by optimizing inter chip data transfer. At the core of this transformation lies the automation of design and simulation for heterogeneous AI chips, shifting from manual engineering to algorithm driven methodologies. This evolution is being accelerated by advanced electronic design automation (EDA) tools powered by AI. My research group develops novel AI driven algorithms that enhance or replace traditional design automation techniques, with a focus on enabling next generation heterogeneous AI systems. In this talk, I will present our recent innovations and explore the critical challenges that lie ahead in applying AI algorithms to EDA for high performance AI chip design.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                            <div class="col-2">9:10-10:00</div>
+                            <div class="col-8 row">
+                                <div class="pt-2"><strong>Design Flows & Thermal Exploration for STCO in multi-die 3D-ICs: from tools to systems</strong></div>
+                                <div class="pt-1 row">
+                                    <div class="pt-1"><em>Prof. Dragomir Milojevic (Université libre de Bruxelles)</em>
+                                    </div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+
+                            <div class="pt-2 row profbox">
+                                <div class="col-2">
+                                    <img src="./images/dragomir.jpeg" class="img-fluid" alt="Responsive image">
+                                </div>
+                                <div class="col-10">
+                                    <h5><strong>Prof. Dragomir Milojevic (Université libre de Bruxelles)</strong></h5>
+                                    <strong><em>Design Flows & Thermal Exploration for STCO in multi-die 3D-ICs: from tools to systems</em></strong>
+                                    <div><b>Abstract:</b> In this talk we will discuss design flows for multi-die 3D-ICs with System Technology Co-Optimization (STCO) paradigm in mind. Different flow steps will be covered in detail, starting from the system level architecture tunning, application-level assessment of the architectural knobs (using kernels & workloads) to place & route (layout generation), power & thermal analysis. In the second part of the presentation, the above flows will be used to demonstrate their practical application on concrete systems to analyse trade-offs that different choices at architecture, partitioning, technology and other levels imply for performance, power, area and thermal aspects of the circuit. Finally, we will look into the future development of the EDA flows as required by the CMOS2.0 technology paradigm.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                            <div class="col-2">10:20-11:10</div>
+                            <div class="col-8 row">
+                                <div class="pt-2"><strong>Physics-constrained Operator Learning for Modeling and Optimization of Thermal Effects in Chip Design</strong></div>
+                                <div class="pt-1 row">
+                                    <div class="pt-1"><em>Prof. Zheng Zhang (University of California, Santa Barbara)</em></div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="pt-2 row profbox">
+                                <div class="col-2">
+                                    <img src="./images/zz.jpg" class="img-fluid" alt="Responsive image">
+                                </div>
+                                <div class="col-10">
+                                    <h5><strong>Prof. Zheng Zhang (University of California, Santa Barbara)</strong></h5>
+                                    <strong><em>Physics-constrained Operator Learning for Modeling and Optimization of Thermal Effects in Chip Design</em></strong>
+                                    <div><b>Abstract:</b> Thermal simulation plays a critical role in the design of 3D integrated circuits (3D-ICs), where accurate and efficient temperature predictions are essential to ensure component reliability and performance. Recently, deep learning methods have shown great potential in accelerating these simulations, but their applications in chip design analysis and optimization are limited by some challenges such as (1) lack of data, (2) long training time, (3) lack of trustworthiness. In this talk, we will present our work of DeepOHeat and its successor to (partially) address these challenges. Our key ideas include (1) data-free physics-constrained operator learning for solution prediction under varying PDE configurations, (2) efficiency and accuracy improvement via low-rank tensor functional representation and Kolmogorov-Arnold networks, (3) fast and trustworthy thermal design optimization via a hybrid framework that integrates operator learning with non-AI solvers (e.g. finite-element methods).</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            <div class="col-2">11:10-12:00</div>
+                            <div class="col-8 row">
+                                <div class="pt-2"><strong>PPA and Power & Thermal Integrity Analysis of 2D and 3D IC CPUs based on Advanced BSPDNs</strong></div>
+                                <div class="pt-1 row">
+                                    <div class="pt-1"><em>Prof. Rongmei Chen (Peking University)</em></div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="pt-2 row profbox">
+                                <div class="col-2">
+                                    <img src="./images/rmchen.jpg" class="img-fluid"
+                                        alt="Responsive image">
+                                </div>
+                                <div class="col-10">
+                                    <h5><strong>Prof. Rongmei Chen (Peking University)</strong></h5>
+                                    <strong><em>PPA and Power & Thermal Integrity Analysis of 2D and 3D IC CPUs based on Advanced BSPDNs</em></strong>
+                                    <div><b>Abstract:</b> This talk talks about recent advancements of BSPDN technologies from industries, including Intel, TSMC, IMEC, IBM and Samsung. Application of BSPDNs for CPU power integrity and PPA improvement is introduced with in-depth physical explanations and chip design analysis provided. The negative impact of thermal integrity on 2D and 3D CPU chips thanks to BSPDN technology or process is also quantitatively evaluated and studied. Before the end, DCTO opportunities for trading off chip PPA and power & thermal integrity is explored for future BSPDN application to high-end CPU design and manufacture.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                            <div class="col-2">11:00-11:50</div>
+                            <div class="col-8 row">
+                                <div class="pt-2"><strong>PPA and Power & Thermal Integrity Analysis of 2D and 3D IC CPUs based on Advanced BSPDNs</strong></div>
+                                <div class="pt-1 row">
+                                    <div class="pt-1"><em>Prof. Rongmei Chen (Peking University)</em></div>
+                                </div>
+                            </div>
+                        </button>
+                    </h2>
+                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="pt-2 row profbox">
+                                <div class="col-2">
+                                    <img src="./images/rmchen.jpg" class="img-fluid"
+                                        alt="Responsive image">
+                                </div>
+                                <div class="col-10">
+                                    <h5><strong>Prof. Rongmei Chen (Peking University)</strong></h5>
+                                    <strong><em>PPA and Power & Thermal Integrity Analysis of 2D and 3D IC CPUs based on Advanced BSPDNs</em></strong>
+                                    <div><b>Abstract:</b> This talk talks about recent advancements of BSPDN technologies from industries, including Intel, TSMC, IMEC, IBM and Samsung. Application of BSPDNs for CPU power integrity and PPA improvement is introduced with in-depth physical explanations and chip design analysis provided. The negative impact of thermal integrity on 2D and 3D CPU chips thanks to BSPDN technology or process is also quantitatively evaluated and studied. Before the end, DCTO opportunities for trading off chip PPA and power & thermal integrity is explored for future BSPDN application to high-end CPU design and manufacture.</div>
+                                </div>
+                            </div>
+                        
+                        </div>
+                    </div>
+                </div> -->
+
+
+            </div>
+
+        </div>
+
+        <div class="pb-5"></div>
+
+        <!-- footer -->
+        <!-- <footer class="bg-dark">
+            <div class="container justify-content-evenly">
+                <div class="row justify-content-evenly">
+
+                    <div class="col my-4 pt-1">
+                        <h1>EDA Center</h1>
+                        <p class="pt-1">
+                            Department of Computer Science and Engineering<br>
+                            Ho Sin-Hang Engineering Building<br>
+                            The Chinese University of Hong Kong<br>
+                            Shatin, New Territories, Hong Kong.
+                        </p>
+                    </div>
+
+                    <div class="col my-4">
+                        <script type="text/javascript" id="clustrmaps"
+                            src="//clustrmaps.com/map_v2.js?d=_3Vx8XDKUsLPb_wgeb_vN6vFVXeg_0FVmTU2E6ShkPc&cl=ffffff&w=a"></script>
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+
+</body>
+
+</html>
