@@ -1,247 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>3D IC Workshop</title>
+    <title>3D IC Workshop 2026</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
-        crossorigin="anonymous" />
     <link rel="stylesheet" href="css/main.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/gh/pcooksey/bibtex-js@1.0.0/src/bibtex_js.min.js"></script>
-    <bibtex src="src/edacenter.bib"></bibtex>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/load_data.js"></script>
 </head>
 
-
 <body>
-
-
-    <div id="workshopTitleDiv" class="col d-flex text-center align-items-center">
+    <header id="workshopTitleDiv" class="col d-flex text-center align-items-center">
         <div id="titleText">
-            <h1>3D IC Workshop</h1>
+            <h1>3D IC Workshop 2026</h1>
         </div>
-    </div>
+    </header>
 
-    <!-- main body -->
-    <div class="container tab-content px-3 pt-5">
-        <div>
-            <div class="pt-3">
-                <h1><b>Agenda</b></h1>
-                <div class="pt-3">
-                    <h5><b>Date</b>: 16th September 2025</h5>
-                    <h5><b>Time</b>: 8:50 - 12:30</h5>
-                    <h5><b>Venue</b>: Hong Kong Science Park 17w 2F Multifunction Room 1</h5>
+    <main class="container px-3 pt-5 pb-5">
+        <h2 class="h1 fw-bold">Agenda</h2>
+        <dl class="row g-2 pt-3 mb-3">
+            <dt class="col-3 col-sm-2">Date</dt>
+            <dd class="col-9 col-sm-10"><time datetime="2026-12-07">Monday, 7 December 2026</time></dd>
+            <dt class="col-3 col-sm-2">Time</dt>
+            <dd class="col-9 col-sm-10"><time datetime="08:50">08:50</time>–<time datetime="16:00">16:00</time> HKT</dd>
+            <dt class="col-3 col-sm-2">Venue</dt>
+            <dd class="col-9 col-sm-10">IDEA Lab, Building 5W, Hong Kong Science Park (HKSTP)</dd>
+        </dl>
+
+        <a class="btn btn-primary btn-lg mb-4" href="https://docs.google.com/forms/d/e/1FAIpQLSe7ZvfzQkb9ue7BY-VOrVWgJ1ooZJdzlLYH8y-gajieCoMBTw/viewform?usp=publish-editor">Register</a>
+
+        <div class="accordion" id="talks">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#talk-lim" aria-expanded="false" aria-controls="talk-lim">
+                        <span class="d-flex flex-column flex-sm-row flex-grow-1 gap-2 pe-3">
+                            <span class="col-sm-3 col-md-2 text-nowrap">
+                                <time datetime="09:00">09:00</time>–<time datetime="09:45">09:45</time>
+                            </span>
+                            <span>
+                                <strong class="d-block">Kirin 9050 Pro Teardown: An EDA Point of View</strong>
+                                <em class="d-block mt-1">Sungkyu Lim (USC)</em>
+                            </span>
+                        </span>
+                    </button>
+                </h3>
+                <div id="talk-lim" class="accordion-collapse collapse" data-bs-parent="#talks">
+                    <div class="accordion-body">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-3 col-md-2">
+                                <img src="images/sklim.jpg" width="128" class="img-fluid" alt="Sungkyu Lim">
+                            </div>
+                            <div class="col">
+                                <p class="mb-0">The Kirin 9050 Pro is the first 3D IC built using Huawei’s Logic Folding technology,
+                                    featuring fine-grained logic-on-logic stacking with a 1.5-um hybrid-bonding pitch and 50 million
+                                    vertical connections. Commercialized in Huawei’s recent tri-fold smartphone, it marks an important
+                                    step toward bringing fine-grained 3D ICs to mobile computing, potentially paralleling the transformative
+                                    role of HBM in AI chips. Emerging technical reports and teardown analyses offer glimpses into this 7-nm
+                                    3D IC competing with 2-nm 2D ICs. With commercial EDA tools lacking native support for Logic Folding,
+                                    Huawei has identified EDA as a grand challenge in enabling such a complex 3D design. Based entirely on
+                                    public-domain information, this talk provides an EDA perspective on the Kirin 9050 Pro, deducing how
+                                    EDA technologies may have been developed and optimized for PPA while addressing thermal, power-delivery,
+                                    and other multi-physics reliability challenges. We conclude by identifying limitations of today’s EDA
+                                    methodologies and directions to further unlock the potential of fine-grained 3D ICs for mobile applications.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- <a class="btn btn-primary btn-lg" href="https://forms.gle/y11tqJdbyw9ZAwbh9" role="button">Register
-                    Now!</a> -->
-                <!-- <div class="pt-2">
-                    <b>Note: The number of seats is limited. Reservations will be on a first-come, first-served basis.
-                        Final decisions will be announced afterward.</b>
-                </div> -->
             </div>
 
-
-            <div class="pt-3 accordion" id="accordionExample">
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
-                            <div class="col-2">9:00-9:45</div>
-                            <div class="col-8 row">
-                                <div class="pt-2"><strong>AI-Driven Design Automation for Multi-Chip Integration in AI Chips</strong></div>
-                                <div class="pt-1 row">
-                                    <div class="pt-1"><em>Prof. Sung-Kyu Lim (University of Southern California)</em>
-                                    </div>
-                                </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#talk-wuu" aria-expanded="false" aria-controls="talk-wuu">
+                        <span class="d-flex flex-column flex-sm-row flex-grow-1 gap-2 pe-3">
+                            <span class="col-sm-3 col-md-2 text-nowrap">
+                                <time datetime="09:45">09:45</time>–<time datetime="10:30">10:30</time>
+                            </span>
+                            <span>
+                                <strong class="d-block">Architecting 3D Designs</strong>
+                                <em class="d-block mt-1">John Wuu (AMD)</em>
+                            </span>
+                        </span>
+                    </button>
+                </h3>
+                <div id="talk-wuu" class="accordion-collapse collapse" data-bs-parent="#talks">
+                    <div class="accordion-body">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-3 col-md-2">
+                                <img src="images/wuu.gif" width="128" class="img-fluid" alt="John Wuu">
                             </div>
-                        </button>
-                    </h2>
-                    <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-
-                            <div class="pt-2 row profbox">
-                                <div class="col-2">
-                                    <img src="./images/sklim.jpg" class="img-fluid" alt="Responsive image">
-                                </div>
-                                <div class="col-10">
-                                    <h5><strong>Prof. Sung-Kyu Lim (University of Southern California)</strong></h5>
-                                    <strong><em>AI-Driven Design Automation for Multi-Chip Integration in AI Chips</em></strong>
-                                    <div><b>Abstract:</b> Multi-chip integration has become a standard approach in AI training and is rapidly gaining traction in edge learning applications. Leveraging 2.5D and 3D IC architecture enables substantial improvements in energy efficiency and latency by optimizing inter chip data transfer. At the core of this transformation lies the automation of design and simulation for heterogeneous AI chips, shifting from manual engineering to algorithm driven methodologies. This evolution is being accelerated by advanced electronic design automation (EDA) tools powered by AI. My research group develops novel AI driven algorithms that enhance or replace traditional design automation techniques, with a focus on enabling next generation heterogeneous AI systems. In this talk, I will present our recent innovations and explore the critical challenges that lie ahead in applying AI algorithms to EDA for high performance AI chip design.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
-                            <div class="col-2">9:45-10:30</div>
-                            <div class="col-8 row">
-                                <div class="pt-2"><strong>Design Flows & Thermal Exploration for STCO in multi-die 3D-ICs: from tools to systems</strong></div>
-                                <div class="pt-1 row">
-                                    <div class="pt-1"><em>Prof. Dragomir Milojevic (Université libre de Bruxelles)</em>
-                                    </div>
-                                </div>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-
-                            <div class="pt-2 row profbox">
-                                <div class="col-2">
-                                    <img src="./images/dragomir.jpeg" class="img-fluid" alt="Responsive image">
-                                </div>
-                                <div class="col-10">
-                                    <h5><strong>Prof. Dragomir Milojevic (Université libre de Bruxelles)</strong></h5>
-                                    <strong><em>Design Flows & Thermal Exploration for STCO in multi-die 3D-ICs: from tools to systems</em></strong>
-                                    <div><b>Abstract:</b> In this talk we will discuss design flows for multi-die 3D-ICs with System Technology Co-Optimization (STCO) paradigm in mind. Different flow steps will be covered in detail, starting from the system level architecture tunning, application-level assessment of the architectural knobs (using kernels & workloads) to place & route (layout generation), power & thermal analysis. In the second part of the presentation, the above flows will be used to demonstrate their practical application on concrete systems to analyse trade-offs that different choices at architecture, partitioning, technology and other levels imply for performance, power, area and thermal aspects of the circuit. Finally, we will look into the future development of the EDA flows as required by the CMOS2.0 technology paradigm.</div>
-                                </div>
+                            <div class="col">
+                                <p>Continued scaling of compute performance demands ever more on-die memory and increased compute density.
+                                    Yet traditional area scaling is slowing and can no longer keep pace with these demands on its own. Chiplets
+                                    and 3D stacking, enabled by hybrid bonding, offer a path forward, allowing products to efficiently grow cache
+                                    size and compute density beyond what monolithic scaling can deliver.</p>
+                                <p class="mb-0">This talk explores how AMD has applied 3D stacking across successive product generations.
+                                    We begin with the AMD 3D V-Cache™, covering the underlying hybrid bonding technology, key design choices,
+                                    and the architecture that enabled stacked cache integration. We then discuss the design-technology
+                                    co-optimization (DTCO) improvements introduced in the second-generation V-Cache, highlighting how technology
+                                    and design can evolve together to further improve performance, power, and area efficiency. Finally, we turn
+                                    to the AMD Instinct™ MI300X accelerator, which takes 3D architecture and technology co-design to the next level.
+                                    We describe how hybrid-bonded chiplets are integrated to form a cohesive design, illustrating how advanced 3D
+                                    packaging provides the flexibility and scalability needed to drive future compute products.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <div class="text-center py-2">
-                    <small class="text-muted">
-                        <em>10:30-11:00 &nbsp;•&nbsp; 30-minute Break</em>
-                    </small>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
-                            <div class="col-2">11:00-11:45</div>
-                            <div class="col-8 row">
-                                <div class="pt-2"><strong>Physics-constrained Operator Learning for Modeling and Optimization of Thermal Effects in Chip Design</strong></div>
-                                <div class="pt-1 row">
-                                    <div class="pt-1"><em>Prof. Zheng Zhang (University of California, Santa Barbara)</em></div>
-                                </div>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="pt-2 row profbox">
-                                <div class="col-2">
-                                    <img src="./images/zz.jpg" class="img-fluid" alt="Responsive image">
-                                </div>
-                                <div class="col-10">
-                                    <h5><strong>Prof. Zheng Zhang (University of California, Santa Barbara)</strong></h5>
-                                    <strong><em>Physics-constrained Operator Learning for Modeling and Optimization of Thermal Effects in Chip Design</em></strong>
-                                    <div><b>Abstract:</b> Thermal simulation plays a critical role in the design of 3D integrated circuits (3D-ICs), where accurate and efficient temperature predictions are essential to ensure component reliability and performance. Recently, deep learning methods have shown great potential in accelerating these simulations, but their applications in chip design analysis and optimization are limited by some challenges such as (1) lack of data, (2) long training time, (3) lack of trustworthiness. In this talk, we will present our work of DeepOHeat and its successor to (partially) address these challenges. Our key ideas include (1) data-free physics-constrained operator learning for solution prediction under varying PDE configurations, (2) efficiency and accuracy improvement via low-rank tensor functional representation and Kolmogorov-Arnold networks, (3) fast and trustworthy thermal design optimization via a hybrid framework that integrates operator learning with non-AI solvers (e.g. finite-element methods).</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                            <div class="col-2">11:45-12:30</div>
-                            <div class="col-8 row">
-                                <div class="pt-2"><strong>PPA and Power & Thermal Integrity Analysis of 2D and 3D IC CPUs based on Advanced BSPDNs</strong></div>
-                                <div class="pt-1 row">
-                                    <div class="pt-1"><em>Prof. Rongmei Chen (Peking University)</em></div>
-                                </div>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="pt-2 row profbox">
-                                <div class="col-2">
-                                    <img src="./images/rmchen.jpg" class="img-fluid"
-                                        alt="Responsive image">
-                                </div>
-                                <div class="col-10">
-                                    <h5><strong>Prof. Rongmei Chen (Peking University)</strong></h5>
-                                    <strong><em>PPA and Power & Thermal Integrity Analysis of 2D and 3D IC CPUs based on Advanced BSPDNs</em></strong>
-                                    <div><b>Abstract:</b> This talk talks about recent advancements of BSPDN technologies from industries, including Intel, TSMC, IMEC, IBM and Samsung. Application of BSPDNs for CPU power integrity and PPA improvement is introduced with in-depth physical explanations and chip design analysis provided. The negative impact of thermal integrity on 2D and 3D CPU chips thanks to BSPDN technology or process is also quantitatively evaluated and studied. Before the end, DCTO opportunities for trading off chip PPA and power & thermal integrity is explored for future BSPDN application to high-end CPU design and manufacture.</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- <div class="accordion-item">
-                    <h2 class="accordion-header">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
-                            <div class="col-2">11:00-11:50</div>
-                            <div class="col-8 row">
-                                <div class="pt-2"><strong>PPA and Power & Thermal Integrity Analysis of 2D and 3D IC CPUs based on Advanced BSPDNs</strong></div>
-                                <div class="pt-1 row">
-                                    <div class="pt-1"><em>Prof. Rongmei Chen (Peking University)</em></div>
-                                </div>
-                            </div>
-                        </button>
-                    </h2>
-                    <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="pt-2 row profbox">
-                                <div class="col-2">
-                                    <img src="./images/rmchen.jpg" class="img-fluid"
-                                        alt="Responsive image">
-                                </div>
-                                <div class="col-10">
-                                    <h5><strong>Prof. Rongmei Chen (Peking University)</strong></h5>
-                                    <strong><em>PPA and Power & Thermal Integrity Analysis of 2D and 3D IC CPUs based on Advanced BSPDNs</em></strong>
-                                    <div><b>Abstract:</b> This talk talks about recent advancements of BSPDN technologies from industries, including Intel, TSMC, IMEC, IBM and Samsung. Application of BSPDNs for CPU power integrity and PPA improvement is introduced with in-depth physical explanations and chip design analysis provided. The negative impact of thermal integrity on 2D and 3D CPU chips thanks to BSPDN technology or process is also quantitatively evaluated and studied. Before the end, DCTO opportunities for trading off chip PPA and power & thermal integrity is explored for future BSPDN application to high-end CPU design and manufacture.</div>
-                                </div>
-                            </div>
-                        
-                        </div>
-                    </div>
-                </div> -->
-
-
             </div>
 
+            <div class="text-center py-2">
+                <small class="text-muted">
+                    <time datetime="10:30">10:30</time>–<time datetime="11:00">11:00</time> · Break
+                </small>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#talk-milojevic" aria-expanded="false" aria-controls="talk-milojevic">
+                        <span class="d-flex flex-column flex-sm-row flex-grow-1 gap-2 pe-3">
+                            <span class="col-sm-3 col-md-2 text-nowrap">
+                                <time datetime="11:00">11:00</time>–<time datetime="11:45">11:45</time>
+                            </span>
+                            <span>
+                                <strong class="d-block">CMOS2.0 – or next generation 3D – opportunities, challenges and examples of applications</strong>
+                                <em class="d-block mt-1">Dragomir Milojevic (IMEC)</em>
+                            </span>
+                        </span>
+                    </button>
+                </h3>
+                <div id="talk-milojevic" class="accordion-collapse collapse" data-bs-parent="#talks">
+                    <div class="accordion-body">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-3 col-md-2">
+                                <img src="images/dragomir.jpeg" width="128" class="img-fluid" alt="Dragomir Milojevic">
+                            </div>
+                            <div class="col">
+                                <p class="mb-0">In this talk, we will explore a possible path towards the next generation of 3D system
+                                    integration: the CMOS2.0 paradigm. Built around the vision of a multilayer, highly specialized and
+                                    heterogeneous IC stack, CMOS2.0 opens new opportunities for breaking down complex systems into finer-grained
+                                    functional building blocks, each implemented in a technology best suited to its specific role. We will explore
+                                    how this unprecedented level of system partitioning and technology specialization could reshape the way we
+                                    design integrated systems. We will discuss the architectural changes required—not only at the hardware level,
+                                    but potentially extending all the way to application design—to fully unlock the potential of this technology.
+                                    This calls for a holistic approach to System-Technology Co-Optimization (STCO), in which technology,
+                                    architecture and applications are developed in close interaction rather than as separate design steps.
+                                    Finally, we will examine the new challenges and opportunities that the CMOS2.0 paradigm brings to Electronic
+                                    Design Automation (EDA) and consider how design methodologies and tools will need to evolve to support this
+                                    new way of building systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#talk-park" aria-expanded="false" aria-controls="talk-park">
+                        <span class="d-flex flex-column flex-sm-row flex-grow-1 gap-2 pe-3">
+                            <span class="col-sm-3 col-md-2 text-nowrap">
+                                <time datetime="11:45">11:45</time>–<time datetime="12:30">12:30</time>
+                            </span>
+                            <span>
+                                <strong class="d-block">From Pseudo-3D to True-3D: Toward a 3D-Native Design Methodology and EDA Framework</strong>
+                                <em class="d-block mt-1">Heechun Park (UNIST)</em>
+                            </span>
+                        </span>
+                    </button>
+                </h3>
+                <div id="talk-park" class="accordion-collapse collapse" data-bs-parent="#talks">
+                    <div class="accordion-body">
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-3 col-md-2">
+                                <img src="images/heechun-park.png" width="128" class="img-fluid" alt="Heechun Park">
+                            </div>
+                            <div class="col">
+                                <p class="mb-0">Pseudo-3D design flows have enabled 3D ICs to be implemented with commercial-level quality
+                                    by leveraging mature 2D engines. As these engines are inherently 2D-native, a gap remains in optimizations
+                                    specific to 3D integration. Recent efforts have narrowed this gap through dedicated heuristics and AI/ML-based
+                                    prediction and optimization, gradually reducing the dependence on the underlying tool engines. This trend
+                                    points toward a 3D-native design methodology and EDA framework as the eventual destination. This talk reviews
+                                    this progression from pseudo-3D toward 3D-native design, and outlines the future directions from a 'design'
+                                    perspective: developing 3D-native algorithms that reflect the distinct characteristics of the 3D domain,
+                                    and employing AI/ML and differentiable optimization to bring their design quality close to the commercial level.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
-        <div class="pb-5"></div>
-
-        <!-- footer -->
-        <!-- <footer class="bg-dark">
-            <div class="container justify-content-evenly">
-                <div class="row justify-content-evenly">
-
-                    <div class="col my-4 pt-1">
-                        <h1>EDA Center</h1>
-                        <p class="pt-1">
-                            Department of Computer Science and Engineering<br>
-                            Ho Sin-Hang Engineering Building<br>
-                            The Chinese University of Hong Kong<br>
-                            Shatin, New Territories, Hong Kong.
-                        </p>
-                    </div>
-
-                    <div class="col my-4">
-                        <script type="text/javascript" id="clustrmaps"
-                            src="//clustrmaps.com/map_v2.js?d=_3Vx8XDKUsLPb_wgeb_vN6vFVXeg_0FVmTU2E6ShkPc&cl=ffffff&w=a"></script>
+        <ul class="list-group mt-3">
+            <li class="list-group-item d-flex flex-column flex-sm-row gap-2 px-3 py-3">
+                <span class="col-sm-3 col-md-2">After the morning talks</span>
+                <div>
+                    <strong class="d-block">Lunch</strong>
+                    <div>
+                        <a href="https://www.hkstp.org/en/park-life/shop-and-dine/dine/happiness-cuisine">Happiness Cuisine
+                            (<span lang="zh-HK">囍慶</span>)</a>, 1/F, Building 1W, Hong Kong Science Park
                     </div>
                 </div>
-            </div>
-        </footer> -->
-
+            </li>
+            <li class="list-group-item d-flex flex-column flex-sm-row gap-2 px-3 py-3">
+                <span class="col-sm-3 col-md-2 text-nowrap">
+                    <time datetime="14:30">14:30</time>–<time datetime="16:00">16:00</time>
+                </span>
+                <strong>Panel Discussion</strong>
+            </li>
+            <li class="list-group-item d-flex flex-column flex-sm-row gap-2 px-3 py-3">
+                <span class="col-sm-3 col-md-2"><time datetime="17:30">17:30</time></span>
+                <div>
+                    <strong class="d-block">Dinner</strong>
+                    <div>
+                        <a href="https://www.hyatt.com/hyatt-regency/en-US/shahr-hyatt-regency-hong-kong-sha-tin/dining/sha-tin-18">Sha Tin 18
+                            (<span lang="zh-HK">沙田18</span>)</a>, Hyatt Regency Hong Kong, Sha Tin
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
 </body>
 
 </html>
